@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Pyqs-Uploader</title>
+    <script>
+        (function () {
+            const lottieUrl = "https://lottie.host/b262bbf7-05a6-4a30-b6e3-648b52389ffe/o5joDCtkZz.json";
+
+            fetch(lottieUrl)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Lottie animation preloaded and cached');
+                })
+                .catch(error => {
+                    console.warn('Failed to preload Lottie animation:', error);
+                });
+        })();
+    </script>
+</head>
+
+<body>
+    <!----------------------STEP 1--------------------->
+    <section id="step1"
+        class="bg-gray-50 dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-800 md:text-5xl lg:text-6xl dark:text-white">
+                Step 1: Just fill out the basic details</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">Here
+                Provide your name along with the details of the branch for which you are uploading the PYQs/Resources.
+            </p>
+            <section class="bg-white shadow-xl dark:bg-gray-900" style="border-radius: 45px;">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl">
+                    <ol class="flex items-center w-full mb-4 sm:mb-5" style="
+    border-right-width: 0px;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 30px;
+">
+                        <li
+                            class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-100 after:border-4 after:inline-block dark:after:border-gray-700 transition-colors duration-300 ease-in-out">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0 transition-colors duration-300 ease-in-out">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300 transition-colors duration-300 ease-in-out"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    viewBox="0 0 20 16">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM6.5 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3.014 13.021l.157-.625A3.427 3.427 0 0 1 6.5 9.571a3.426 3.426 0 0 1 3.322 2.805l.159.622-6.967.023ZM16 12h-3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-100 after:border-4 after:inline-block dark:after:border-gray-700 transition-colors duration-300 ease-in-out">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0 transition-colors duration-300 ease-in-out">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300 transition-colors duration-300 ease-in-out"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    viewBox="0 0 20 14">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 12V6h16v6H2Z" />
+                                    <path
+                                        d="M6 8H4a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm8 0H9a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="flex items-center transition-colors duration-300 ease-in-out">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0 transition-colors duration-300 ease-in-out">
+                                <svg class="w-8 h-8 text-blue-600 dark:text-blue-300 transition-colors duration-300 ease-in-out"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 17h3a3 3 0 0 0 0-6h-.025a5.56 5.56 0 0 0 .025-.5A5.5 5.5 0 0 0 7.207 9.021C7.137 9.017 7.071 9 7 9a4 4 0 1 0 0 8h2.167M12 19v-9m0 0-2 2m2-2 2 2" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ol>
+                    <div>
+                        <form id="step1Form" action="#">
+                            <h3 class="mb-4 text-lg font-medium leading-none text-gray-700 dark:text-white">Basic
+                                details</h3>
+                            <div class="grid gap-4 mb-4 sm:grid-cols-2">
+                                <div class="mb-4">
+                                    <label for="Name"
+                                        class="block mb-2 text-base font-medium text-gray-700 dark:text-white">First
+                                        Name</label>
+                                    <input type="text" name="Name" id="name"
+                                        class="bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="" required style="border-radius: 15px;">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="branch"
+                                        class="block mb-2 text-base font-medium text-gray-700 dark:text-white">PYQs/Resources
+                                        Branch</label>
+                                    <select id="branch" name="Branch" required
+                                        class="bg-gray-50 border border-gray-300 text-gray-700 text-sdefaultm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        style="border-radius: 15px;">
+                                        <option disabled selected>Select PYQs/Resources
+                                            Branch</option>
+                                        <option value="COMPS">COMPS</option>
+                                        <option value="AI&DS">AI&DS</option>
+                                        <option value="E&TC">E&TC</option>
+                                        <option value="IT">IT</option>
+                                        <option value="MECH">MECH</option>
+                                        <option value="CIVIL">CIVIL</option>
+                                        <option value="E&CS">E&CS</option>
+                                        <option value="MME">MME</option>
+                                        <option value="CSE">CSE</option>
+                                        <option value="AI&ML">AI&ML</option>
+                                        <option value="IoT">IoT</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-5 flex justify-center">
+                                <div class="w-full max-w-sm">
+                                    <label for="year"
+                                        class="block mb-2 text-base font-medium text-gray-700 dark:text-white">PYQs/Resources
+                                        Year</label>
+                                    <select id="year" name="Year"
+                                        class="bg-gray-50 border border-gray-300 text-gray-700 text-sdefaultm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        style="border-radius: 15px;">
+                                        <option value="2024-25" selected>2024-25</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button id="step1Submit" name="submit" type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-base px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <span class="inline-block">Lock & Proceed</span>
+                                <svg class="w-6 h-6 text-gray-100 dark:text-white inline-block" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+                                </svg>
+                            </button>
+                            <button type="button" id="Step1lockedButton"
+                                style="box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);"
+                                class="hidden text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
+                                disabled>Locked</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div
+            class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0">
+        </div>
+    </section>
+
+    <!-------------------------STEP 2------------------------>
+    <section id="step2"
+        class="hidden bg-gray-50 dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-800 md:text-5xl lg:text-6xl dark:text-white">
+                Step 2: Select the SEM & File(s).</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">Select the
+                SEM of the PYQs/Resources you are uploading along with the file(s). PYQs subject refers to any elective
+                subject's PYQs. Combined refers to one file that
+                contains ISE1, ISE2, & ESE.</p>
+            <section class="bg-white shadow-xl dark:bg-gray-900" style="border-radius: 45px;">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl">
+                    <ol class="flex items-center w-full mb-4 sm:mb-5" style="
+    border-right-width: 0px;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 30px;
+">
+                        <li
+                            class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-blue-100 after:border-4 after:inline-block dark:after:border-blue-800 transition-colors duration-300 ease-in-out">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0 transition-colors duration-300 ease-in-out">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300 transition-colors duration-300 ease-in-out"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    viewBox="0 0 20 16">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM6.5 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3.014 13.021l.157-.625A3.427 3.427 0 0 1 6.5 9.571a3.426 3.426 0 0 1 3.322 2.805l.159.622-6.967.023ZM16 12h-3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-gray-100 after:border-4 after:inline-block dark:after:border-gray-700 transition-colors duration-300 ease-in-out">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0 transition-colors duration-300 ease-in-out">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300 transition-colors duration-300 ease-in-out"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    viewBox="0 0 20 14">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 12V6h16v6H2Z" />
+                                    <path
+                                        d="M6 8H4a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm8 0H9a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="flex items-center transition-colors duration-300 ease-in-out">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-gray-100 rounded-full lg:h-12 lg:w-12 dark:bg-gray-700 shrink-0 transition-colors duration-300 ease-in-out">
+                                <svg class="w-8 h-8 text-blue-600 dark:text-blue-300 transition-colors duration-300 ease-in-out"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 17h3a3 3 0 0 0 0-6h-.025a5.56 5.56 0 0 0 .025-.5A5.5 5.5 0 0 0 7.207 9.021C7.137 9.017 7.071 9 7 9a4 4 0 1 0 0 8h2.167M12 19v-9m0 0-2 2m2-2 2 2" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ol>
+                    <div>
+                        <form action="#">
+                            <h3 class="mb-4 text-lg font-medium leading-none text-gray-700 dark:text-white">File(s)
+                                Uploading Details</h3>
+                            <div class="mb-4">
+                                <label for="SEM"
+                                    class="block mb-2 text-base font-medium text-gray-700 dark:text-white">PYQs/Resources
+                                    SEM</label>
+                                <div class="flex justify-center">
+                                    <select id="SEM" name="Sem"
+                                        class="max-w-sm bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        style="border-radius: 15px;">
+                                        <option disabled selected>Select SEM</option>
+                                        <option value="SEM 3">SEM 3</option>
+                                        <option value="SEM 4">SEM 4</option>
+                                        <option value="SEM 5">SEM 5</option>
+                                        <option value="SEM 6">SEM 6</option>
+                                        <option value="SEM 7">SEM 7</option>
+                                        <option value="SEM 8">SEM 8</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="grid gap-4 mb-4">
+                                <div class="mb-4">
+                                    <h3 class="mb-2 font-semibold text-gray-700 dark:text-white">Select File(s) You Are
+                                        Uploading (Max 3)</h3>
+                                    <ul class="items-center w-full text-base font-medium text-gray-700 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                                        style="border-radius: 15px;">
+                                        <li
+                                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="resources" type="checkbox" value=""
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="resources"
+                                                    class="w-full py-3 ms-2 text-base font-medium text-gray-700 dark:text-gray-300">Resources</label>
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="subject" type="checkbox" value=""
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="subject"
+                                                    class="w-full py-3 ms-2 text-base font-medium text-gray-700 dark:text-gray-300">PYQs
+                                                    Subject</label>
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="ESE" type="checkbox" value="ESE"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="ESE"
+                                                    class="w-full py-3 ms-2 text-base font-medium text-gray-700 dark:text-gray-300">ESE</label>
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="ISE1" type="checkbox" value="ISE 1"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="ISE1"
+                                                    class="w-full py-3 ms-2 text-base font-medium text-gray-700 dark:text-gray-300">ISE
+                                                    1</label>
+                                            </div>
+                                        </li>
+                                        <li
+                                            class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="ISE2" type="checkbox" value="ISE 2"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="ISE2"
+                                                    class="w-full py-3 ms-2 text-base font-medium text-gray-700 dark:text-gray-300">ISE
+                                                    2</label>
+                                            </div>
+                                        </li>
+                                        <li class="w-full dark:border-gray-600">
+                                            <div class="flex items-center ps-3">
+                                                <input id="Combined" type="checkbox" value="Combined"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
+                                                <label for="Combined"
+                                                    class="w-full py-3 ms-2 text-base font-medium text-gray-700 dark:text-gray-300">Combined
+                                                    <p class="text-xs text-gray-500 dark:text-gray-400">Single file
+                                                        contains
+                                                        ISE1,ISE2 & ESE.</p>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div id="resourcesDetail" class="hidden mb-5 flex justify-center">
+                                <div class="w-full max-w-sm">
+                                    <label for="subjectInput"
+                                        class="block mb-2 text-base font-medium text-gray-700 dark:text-white">Resources
+                                        Name</label>
+                                    <input type="text" name="resourcesInput" id="resourcesInput"
+                                        class="bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="" required style="border-radius: 15px;">
+                                </div>
+                            </div>
+
+                            <div id="subjectDetail" class="hidden mb-5 flex justify-center">
+                                <div class="w-full max-w-sm">
+                                    <label for="subjectInput"
+                                        class="block mb-2 text-base font-medium text-gray-700 dark:text-white">PYQs
+                                        Subject Name</label>
+                                    <input type="text" name="subjectInput" id="subjectInput"
+                                        class="bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                        placeholder="" required style="border-radius: 15px;">
+                                </div>
+                            </div>
+                            <button id="step2Submit" type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-base px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <span class="inline-block">Lock & Upload File(s)</span>
+                                <svg class="w-6 h-6 text-gray-100 dark:text-white inline-block" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
+                                </svg>
+                            </button>
+                            <button type="button" id="Step2lockedButton"
+                                style="box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);"
+                                class="hidden text-white bg-blue-400 dark:bg-blue-500 cursor-not-allowed font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2"
+                                disabled>Locked</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div
+            class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0">
+        </div>
+    </section>
+
+    <!------------------------STEP 3------------------------->
+    <section id="step3"
+        class="hidden bg-gray-50 dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+            <h1
+                class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-800 md:text-5xl lg:text-6xl dark:text-white">
+                Step 3: Upload The File(s)</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">Final
+                step, Upload the file(s) you selected above. You will be prompted accordingly to upload them in the
+                correct sequence.</p>
+            <section class="bg-white shadow-xl dark:bg-gray-900" style="border-radius: 45px;">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl">
+                    <ol class="flex items-center w-full mb-4 sm:mb-5" style="
+    border-right-width: 0px;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 30px;
+">
+                        <li
+                            class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-blue-100 after:border-4 after:inline-block dark:after:border-blue-800 transition-colors duration-300 ease-in-out">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0 transition-colors duration-300 ease-in-out">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300 transition-colors duration-300 ease-in-out"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    viewBox="0 0 20 16">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM6.5 3a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3.014 13.021l.157-.625A3.427 3.427 0 0 1 6.5 9.571a3.426 3.426 0 0 1 3.322 2.805l.159.622-6.967.023ZM16 12h-3a1 1 0 0 1 0-2h3a1 1 0 0 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Zm0-3h-3a1 1 0 1 1 0-2h3a1 1 0 1 1 0 2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="flex w-full items-center text-blue-600 dark:text-blue-500 after:content-[''] after:w-full after:h-1 after:border-b after:border-blue-100 after:border-4 after:inline-block dark:after:border-blue-800 transition-colors duration-300 ease-in-out">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0 transition-colors duration-300 ease-in-out">
+                                <svg class="w-4 h-4 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300 transition-colors duration-300 ease-in-out"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    viewBox="0 0 20 14">
+                                    <path
+                                        d="M18 0H2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 12V6h16v6H2Z" />
+                                    <path
+                                        d="M6 8H4a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2Zm8 0H9a1 1 0 0 0 0 2h5a1 1 0 1 0 0-2Z" />
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="flex items-center text-blue-600 dark:text-blue-500 transition-colors duration-300 ease-in-out">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full lg:h-12 lg:w-12 dark:bg-blue-800 shrink-0 transition-colors duration-300 ease-in-out">
+                                <svg class="w-8 h-8 text-blue-600 dark:text-blue-300 transition-colors duration-300 ease-in-out"
+                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 17h3a3 3 0 0 0 0-6h-.025a5.56 5.56 0 0 0 .025-.5A5.5 5.5 0 0 0 7.207 9.021C7.137 9.017 7.071 9 7 9a4 4 0 1 0 0 8h2.167M12 19v-9m0 0-2 2m2-2 2 2" />
+                                </svg>
+                            </div>
+                        </li>
+                    </ol>
+                    <div>
+                        <form id="step3Form" action="#">
+                            <div class="mb-4 flex items-center justify-center">
+                                <div class="flex items-center justify-center w-full" style="max-width: 80%;"> <label
+                                        id="dropzone" style="border-radius: 45px;"
+                                        class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                                        ondragover="event.preventDefault(); event.currentTarget.classList.add('drag-hover');"
+                                        ondragleave="event.currentTarget.classList.remove('drag-hover');"
+                                        ondrop="event.preventDefault(); event.currentTarget.classList.remove('drag-hover'); event.currentTarget.classList.add('drop-pulse'); setTimeout(() => event.currentTarget.classList.remove('drop-pulse'), 300); handleFileDrop(event);">
+                                        <input id="dropzone-file" type="file" name="File_link" class="hidden"
+                                            onchange="handleFileInput(this.files)" accept=".pdf" />
+                                        <!-- Initial file container -->
+                                        <div id="file-container"
+                                            class="flex flex-col items-center justify-center pt-5 pb-6"> <svg
+                                                class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                                            </svg>
+                                            <p class="mb-2 text-base text-gray-500 dark:text-gray-400"> <span
+                                                    class="font-semibold text-blue-500">Click to upload</span> or drag
+                                                and drop </p>
+                                            <p class="text-xs text-gray-500 dark:text-gray-400">PDF Only</p>
+                                        </div> <!-- File icon and name display -->
+                                        <div id="file-icon" class="hidden">
+                                            <div class="mb-4">
+                                                <div class="flex flex-col items-center justify-center pt-5 pb-6"> <svg
+                                                        xmlns="http://www.w3.org/2000/svg" width="75.320129mm"
+                                                        height="92.604164mm" viewBox="0 0 75.320129 92.604164"
+                                                        style=" height: 100px; width: 100px; ">
+                                                        <g transform="translate(53.548057 -183.975276) scale(1.4843)">
+                                                            <path fill="#ff2116"
+                                                                d="M-29.632812 123.94727c-3.551967 0-6.44336 2.89347-6.44336 6.44531v49.49804c0 3.55185 2.891393 6.44532 6.44336 6.44532H8.2167969c3.5519661 0 6.4433591-2.89335 6.4433591-6.44532v-40.70117s.101353-1.19181-.416015-2.35156c-.484969-1.08711-1.275391-1.84375-1.275391-1.84375a1.0584391 1.0584391 0 0 0-.0059-.008l-9.3906254-9.21094a1.0584391 1.0584391 0 0 0-.015625-.0156s-.8017392-.76344-1.9902344-1.27344c-1.39939552-.6005-2.8417968-.53711-2.8417968-.53711l.021484-.002z"
+                                                                color="#000" font-family="sans-serif" overflow="visible"
+                                                                paint-order="markers fill stroke"
+                                                                style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;isolation:auto;mix-blend-mode:normal;solid-color:#000000;solid-opacity:1">
+                                                            </path>
+                                                            <path fill="#f5f5f5"
+                                                                d="M-29.632812 126.06445h28.3789058a1.0584391 1.0584391 0 0 0 .021484 0s1.13480448.011 1.96484378.36719c.79889772.34282 1.36536982.86176 1.36914062.86524.0000125.00001.00391.004.00391.004l9.3671868 9.18945s.564354.59582.837891 1.20899c.220779.49491.234375 1.40039.234375 1.40039a1.0584391 1.0584391 0 0 0-.002.0449v40.74609c0 2.41592-1.910258 4.32813-4.3261717 4.32813H-29.632812c-2.415914 0-4.326172-1.91209-4.326172-4.32813v-49.49804c0-2.41603 1.910258-4.32813 4.326172-4.32813z"
+                                                                color="#000" font-family="sans-serif" overflow="visible"
+                                                                paint-order="markers fill stroke"
+                                                                style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;isolation:auto;mix-blend-mode:normal;solid-color:#000000;solid-opacity:1">
+                                                            </path>
+                                                            <path fill="#ff2116"
+                                                                d="M-23.40766 161.09299c-1.45669-1.45669.11934-3.45839 4.39648-5.58397l2.69124-1.33743 1.04845-2.29399c.57665-1.26169 1.43729-3.32036 1.91254-4.5748l.8641-2.28082-.59546-1.68793c-.73217-2.07547-.99326-5.19438-.52872-6.31588.62923-1.51909 2.69029-1.36323 3.50626.26515.63727 1.27176.57212 3.57488-.18329 6.47946l-.6193 2.38125.5455.92604c.30003.50932 1.1764 1.71867 1.9475 2.68743l1.44924 1.80272 1.8033728-.23533c5.72900399-.74758 7.6912472.523 7.6912472 2.34476 0 2.29921-4.4984914 2.48899-8.2760865-.16423-.8499666-.59698-1.4336605-1.19001-1.4336605-1.19001s-2.3665326.48178-3.531704.79583c-1.202707.32417-1.80274.52719-3.564509 1.12186 0 0-.61814.89767-1.02094 1.55026-1.49858 2.4279-3.24833 4.43998-4.49793 5.1723-1.3991.81993-2.86584.87582-3.60433.13733zm2.28605-.81668c.81883-.50607 2.47616-2.46625 3.62341-4.28553l.46449-.73658-2.11497 1.06339c-3.26655 1.64239-4.76093 3.19033-3.98386 4.12664.43653.52598.95874.48237 2.01093-.16792zm21.21809-5.95578c.80089-.56097.68463-1.69142-.22082-2.1472-.70466-.35471-1.2726074-.42759-3.1031574-.40057-1.1249.0767-2.9337647.3034-3.2403347.37237 0 0 .993716.68678 1.434896.93922.58731.33544 2.0145161.95811 3.0565161 1.27706 1.02785.31461 1.6224.28144 2.0729-.0409zm-8.53152-3.54594c-.4847-.50952-1.30889-1.57296-1.83152-2.3632-.68353-.89643-1.02629-1.52887-1.02629-1.52887s-.4996 1.60694-.90948 2.57394l-1.27876 3.16076-.37075.71695s1.971043-.64627 2.97389-.90822c1.0621668-.27744 3.21787-.70134 3.21787-.70134zm-2.74938-11.02573c.12363-1.0375.1761-2.07346-.15724-2.59587-.9246-1.01077-2.04057-.16787-1.85154 2.23517.0636.8084.26443 2.19033.53292 3.04209l.48817 1.54863.34358-1.16638c.18897-.64151.47882-2.02015.64411-3.06364z">
+                                                            </path>
+                                                            <path fill="#2c2c2c"
+                                                                d="M-20.930423 167.83862h2.364986q1.133514 0 1.840213.2169.706698.20991 1.189489.9446.482795.72769.482795 1.75625 0 .94459-.391832 1.6233-.391833.67871-1.056548.97958-.65772.30087-2.02913.30087h-.818651v3.72941h-1.581322zm1.581322 1.22447v3.33058h.783664q1.049552 0 1.44838-.39184.405826-.39183.405826-1.27345 0-.65772-.265887-1.06355-.265884-.41282-.587747-.50378-.314866-.098-1.000572-.098zm5.50664-1.22447h2.148082q1.560333 0 2.4909318.55276.9375993.55276 1.4133973 1.6443.482791 1.09153.482791 2.42096 0 1.3994-.4338151 2.49793-.4268149 1.09153-1.3154348 1.76324-.8816233.67172-2.5189212.67172h-2.267031zm1.581326 1.26645v7.018h.657715q1.378411 0 2.001144-.9516.6227329-.95858.6227329-2.5539 0-3.5125-2.6238769-3.5125zm6.4722254-1.26645h5.30372941v1.26645H-4.2075842v2.85478h2.9807225v1.26646h-2.9807225v4.16322h-1.5813254z"
+                                                                font-family="Franklin Gothic Medium Cond"
+                                                                letter-spacing="0"
+                                                                style="line-height:125%;-inkscape-font-specification:'Franklin Gothic Medium Cond'"
+                                                                word-spacing="4.26000023"></path>
+                                                        </g>
+                                                    </svg> </div>
+                                                <p id="file-name-display" style="margin-bottom: 20px"
+                                                    class="text-gray-500 dark:text-gray-400"></p>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <button id="finalSubmit" type="button"
+                                class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-base px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                upload
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div
+            class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0">
+        </div>
+    </section>
+
+    <section id="upload-progress-screen"
+        class="hidden fixed inset-0 bg-white bg-opacity-90 flex flex-col justify-center items-center z-50 transition-opacity duration-500">
+        <div class="progress-container">
+            <div class="progress-circle">
+                <svg class="progress-ring" width="150" height="150">
+                    <circle class="progress-ring__background" cx="75" cy="75" r="65" />
+                    <circle class="progress-ring__circle" cx="75" cy="75" r="65" />
+                </svg>
+                <div class="progress-value">0%</div>
+            </div>
+            <div class="progress-glow"></div>
+        </div>
+        <h2 id="upload-status-message"
+            class="text-gray-800 text-2xl font-semibold mt-8 text-center px-4 animate-slide-up">
+            Your file is uploading...
+        </h2>
+        <p id="next-file-message" class="text-gray-500 text-lg mt-2 text-center px-4 animate-slide-up">
+            Please wait.
+        </p>
+    </section>
+
+    <footer id="footer" class="bg-gray-900 dark:bg-gray-900 text-center">
+        <div class="mx-auto w-full max-w-screen-xl">
+            <div class="py-3">
+                <div>
+                    <h2 class="mb-1 text-sm text-white dark:text-white" style="font-family: 'JetBrains Mono';">Switch
+                        Year/Platform:
+                    </h2>
+                    <span id="switch" class="text-sm text-blue-400 hover:underline cursor-pointer sm:text-center"
+                        style="font-family: 'JetBrains Mono';">Switch<svg
+                            class="ml-2 w-5 h-5 inline-block text-blue-300" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                        </svg> </span>
+                </div>
+            </div>
+        </div>
+        <div class="pt-2 pb-3 bg-gray-600 dark:bg-gray-600">
+            <span class="text-sm text-gray-200 sm:text-center" style="font-family: 'JetBrains Mono';">Made With<svg
+                    class="mx-1 inline-block" style="height: 18px; width: 18px;" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                            d="M2 9.1371C2 14 6.01943 16.5914 8.96173 18.9109C10 19.7294 11 20.5 12 20.5C13 20.5 14 19.7294 15.0383 18.9109C17.9806 16.5914 22 14 22 9.1371C22 4.27416 16.4998 0.825464 12 5.50063C7.50016 0.825464 2 4.27416 2 9.1371Z"
+                            fill="#e24040"></path>
+                    </g>
+                </svg>By ISK
+            </span><br>
+            <span style="font-size: 13px;" class="text-gray-400 md:text-center">To Report Bug <a
+                    href="mailto:shaikh_inayat@outlook.com?subject=BUG%20REPORT%20%2F%20SUGGESTIONS"
+                    class="text-blue-400 hover:underline">Click here <svg class="w-5 h-5 inline-block text-blue-400"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M3 5.983C3 4.888 3.895 4 5 4h14c1.105 0 2 .888 2 1.983v8.923a1.992 1.992 0 0 1-2 1.983h-6.6l-2.867 2.7c-.955.899-2.533.228-2.533-1.08v-1.62H5c-1.105 0-2-.888-2-1.983V5.983Zm5.706 3.809a1 1 0 1 0-1.412 1.417 1 1 0 1 0 1.412-1.417Zm2.585.002a1 1 0 1 1 .003 1.414 1 1 0 0 1-.003-1.414Zm5.415-.002a1 1 0 1 0-1.412 1.417 1 1 0 1 0 1.412-1.417Z"
+                            clip-rule="evenodd" />
+                    </svg> </a></span>
+        </div>
+    </footer>
+
+    <div id="switchModal" style="font-family: 'Plus Jakarta Sans', sans-serif;"
+        class="hidden fixed z-10 inset-0 overflow-y-auto flex items-center justify-center p-4"
+        aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="w-full max-w-sm sm:max-w-md mx-2 sm:mx-0">
+            <div style="background: rgba(0, 0, 0, 0.770);" class="fixed inset-0 transition-opacity" aria-hidden="true">
+            </div>
+            <div style="border-radius: 20px;"
+                class="bg-gray-100 rounded-lg overflow-hidden shadow-xl transform transition-all w-full">
+                <!-- Modal header with close button -->
+                <div class="flex flex-col items-center space-y-1 p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-xl font-medium text-gray-800">
+                        Year/Platform
+                    </h3>
+                    <p class="text-sm text-gray-500 stack-animation">
+                        Select an option below
+                    </p>
+                </div>
+                <!-- Modal body -->
+                <div style="font-family: 'JetBrains Mono';"
+                    class="p-4 md:p-5 text-center overflow-y-auto flex flex-col items-center justify-center">
+                    <div class="flex items-center mb-4">
+                        <input id="firstYear" type="radio" value="" name="default-radio"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer">
+                        <label for="firstYear"
+                            class="ms-2 text-sm font-medium text-gray-700 dark:text-gray-300 cursor-pointer select-none">Ist
+                            Year Pyqs</label>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <input id="secondYear" type="radio" value="" name="default-radio"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer">
+                        <label for="secondYear"
+                            class="ms-2 text-sm font-medium text-gray-700 dark:text-gray-300 cursor-pointer select-none">IInd-IVth
+                            Year Pyqs & Resources</label>
+                    </div>
+                    <div class="flex items-center mb-4" style="border-top: 1.3px solid #adadad;">
+                        <input id="firstYearUpload" type="radio" value="" name="default-radio"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer mt-3">
+                        <label for="firstYearUpload"
+                            class="ms-2 text-sm font-medium text-gray-700 dark:text-gray-300 cursor-pointer select-none mt-4">Ist
+                            Year Pyqs
+                            Upload</label>
+                    </div>
+                    <div class="flex items-center mb-1">
+                        <input id="secondYearUpload" type="radio" value="" name="default-radio"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 cursor-pointer">
+                        <label for="secondYearUpload"
+                            class="ms-2 text-sm font-medium text-gray-700 dark:text-gray-300 cursor-pointer select-none">IInd-IVth
+                            Year
+                            Pyqs & Resources Upload</label>
+                    </div>
+                </div>
+                <!---------Switch Button------->
+                <div id="switchButtonContainer"
+                    class="hidden mb-2 flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 opacity-0 transform translate-y-4 transition-all duration-500 ease-out">
+                    <a id="switchButton" href="" target="_blank"
+                        class="text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800 inline-flex items-center transform hover:scale-105 transition-transform duration-200">
+                        <span class="plus-jakarta-sans">Switch<svg class="ml-2 w-5 h-5 inline-block text-blue-200"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                            </svg></span>
+                    </a>
+                </div>
+                <button type="button" id="closeSwitchModal"
+                    class="absolute right-2 top-2 text-gray-200 bg-gray-600 hover:bg-blue-700 hover:text-gray-100 rounded-full text-sm w-8 h-8 inline-flex justify-center items-center dark:hover:bg-blue-600 dark:hover:text-white">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
